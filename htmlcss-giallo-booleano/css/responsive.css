@@ -1,0 +1,99 @@
+/* Soluzione qui */
+
+/* Da 0 a 576px */
+@media screen and (max-width: 576px) {
+    main section.presentation p img {
+        float: none;
+    }
+}
+
+/* Da 576px in su */
+@media screen and (min-width: 576px) {
+    main section.presentation p img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    main .social-networks button {
+        flex-grow: 1;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header#topbar {
+        justify-content: flex-start;
+    }
+
+    main {
+        padding: 40px;
+    }
+
+    main h2.recipe-name span {
+        display: inline;
+    }
+
+    main h2.recipe-name {
+        font-size: 32px;
+    }
+
+    main section.recipe .recipe-card .recipe-info .quick-notes ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* main .social-networks {
+        justify-content: space-evenly;
+    } */
+
+    main .social-networks button {
+        flex-grow: 1;
+    }
+
+    main .ads {
+        display: block;
+    }
+
+    main section.presentation p img {
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main h2.recipe-name {
+        font-size: 48px;
+    }
+
+    main section.recipe .recipe-card {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    main section.recipe .recipe-card .recipe-video {
+        height: 400px;
+    }
+
+    main section.recipe .recipe-card .recipe-info .quick-notes ul {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    main section.recipe .recipe-card .recipe-info .quick-notes ul li {
+        margin: 5px 0;
+    }
+
+    main section.presentation p img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    main .social-networks button span.label {
+        display: inline;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
