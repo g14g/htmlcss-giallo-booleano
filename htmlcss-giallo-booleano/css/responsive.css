@@ -70,7 +70,9 @@
     }
 
     main section.recipe .recipe-card .recipe-video {
-        height: 400px;
+        /* height: 400px; */
+        height: auto;
+        aspect-ratio: 16/9;
     }
 
     main section.recipe .recipe-card .recipe-info .quick-notes ul {
